@@ -45,3 +45,7 @@ footer .social-icon:hover {
     color: #333333;
     text-decoration: none;
 }
+
+footer .bi-heart-fill {
+    margin: 5px;
+}
