@@ -25,6 +25,7 @@ import CardSimpli from '../components/CardSimpli';
 import CardXfwall from '../components/CardXfwall';
 import CardMyAPI from '../components/CardMyApi';
 //import CardWebFront from '../components/CardWebFront';
+import PopupInSection from '../components/PopupInSection';
 
 export default function Index(){
     
@@ -55,7 +56,9 @@ export default function Index(){
                         </div>
                         <div className="col-md-2"></div>
                         <div className="col-md-4 float-md-right mx-auto">
-                            <img src={profilePic} className="img-fluid rounded-circle profile-pic d-block mx-auto" alt="Imagen de perfil" />
+                            <PopupInSection>
+                                <img src={profilePic} className="img-fluid rounded-circle profile-pic d-block mx-auto" alt="Imagen de perfil" />
+                            </PopupInSection>
                         </div>
                     </div>
                 </div>
@@ -66,12 +69,31 @@ export default function Index(){
                 <section id="portfolio" className="portfolio">
                     <div className="space-50"></div>
                     <h3>Este es mi portafolio</h3>
-                    <CardXfwall />
-                    <CardSimpli />
-                    <CardNetworkInterfacesInfo />
-                    <CardMyAPI />
-                    <CardNotaria1Leon />
-                    <CardPandanot />
+
+                    <PopupInSection>
+                        <CardXfwall />
+                    </PopupInSection>
+
+                    <PopupInSection>
+                        <CardSimpli/>
+                    </PopupInSection>
+
+                    <PopupInSection>
+                        <CardNetworkInterfacesInfo/>
+                    </PopupInSection>
+
+                    <PopupInSection>
+                        <CardMyAPI/>
+                    </PopupInSection>
+
+                    <PopupInSection>
+                        <CardNotaria1Leon/>
+                    </PopupInSection>
+
+                    <PopupInSection>
+                        <CardPandanot/>
+                    </PopupInSection>
+
                     <p className="info-github">Más en <a href="https://github.com/agopdev" target="_blank" rel="noreferrer">Github</a>.</p>
                     <div className="space-50"></div>
                 </section>
@@ -83,38 +105,58 @@ export default function Index(){
                     <div className="container">
                         <div className="row logos-row">
                             <div className="col-sm-6 col-md-3 col-lg-3 text-center">
-                                <img src={jsLogo} alt="Javascript logo" className="logo-skills" />
+                                <PopupInSection>
+                                    <img src={jsLogo} alt="Javascript logo" className="logo-skills" />
+                                </PopupInSection>
                             </div>
                             <div className="col-sm-6 col-md-3 col-lg-3 text-center">
-                                <img src={typescriptLogo} alt="Hostinger logo" className="logo-skills" />
+                                <PopupInSection>
+                                    <img src={typescriptLogo} alt="Hostinger logo" className="logo-skills" />
+                                </PopupInSection>
                             </div>
                             <div className="col-sm-6 col-md-3 col-lg-3 text-center">
-                                <img src={nodejsLogo} alt="NodeJS logo" className="logo-skills" />
+                                <PopupInSection>
+                                    <img src={nodejsLogo} alt="NodeJS logo" className="logo-skills" />
+                                </PopupInSection>
                             </div>
                             <div className="col-sm-6 col-md-3 col-lg-3 text-center">
-                                <img src={gitLogo} alt="Git logo" className="logo-skills" />
+                                <PopupInSection>
+                                    <img src={gitLogo} alt="Git logo" className="logo-skills" />
+                                </PopupInSection>
                             </div>
                         </div>
                         <div className="row logos-row">
                             <div className="col-sm-6 col-md-3 col-lg-3 text-center">
-                                <img src={phpLogo} alt="PHP logo" className="logo-skills" />
+                                <PopupInSection>
+                                    <img src={phpLogo} alt="PHP logo" className="logo-skills" />
+                                </PopupInSection>
                             </div>
                             <div className="col-sm-6 col-md-3 col-lg-3 text-center">
-                                <img src={javaLogo} alt="Java logo" className="logo-skills" />
+                                <PopupInSection>
+                                    <img src={javaLogo} alt="Java logo" className="logo-skills" />
+                                </PopupInSection>
                             </div>
                             <div className="col-sm-6 col-md-3 col-lg-3 text-center">
-                                <img src={reactLogo} alt="React logo" className="logo-skills" />
+                                <PopupInSection>                                
+                                    <img src={reactLogo} alt="React logo" className="logo-skills" />
+                                </PopupInSection>
                             </div>
                             <div className="col-sm-6 col-md-3 col-lg-3 text-center">
-                                <img src={mysqlLogo} alt="MySQL logo" className="logo-skills" />
+                                <PopupInSection>
+                                    <img src={mysqlLogo} alt="MySQL logo" className="logo-skills" />
+                                </PopupInSection>
                             </div>
                         </div>
                         <div className="row logos-row">
                             <div className="col-sm-6 col-md-6 col-lg-6 text-center">
-                                <img src={linuxLogo} alt="Linux logo" className="logo-skills" />
+                                <PopupInSection>
+                                    <img src={linuxLogo} alt="Linux logo" className="logo-skills" />
+                                </PopupInSection>
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-6 text-center">
-                                <img src={windowsLogo} alt="Windows logo" className="logo-skills" />
+                                <PopupInSection>
+                                    <img src={windowsLogo} alt="Windows logo" className="logo-skills" />
+                                </PopupInSection>
                             </div>
                         </div>
                     </div>
