@@ -10,7 +10,7 @@ export default function Footer() {
                         <div className="row">
                             <div className="col-md-4 section">
                                 <h4 className="title">Contacto</h4>
-                                <p><a href="mailto:info@agop.dev" target="_blank" rel="noreferrer" className="contact-mail">info@agop.dev</a></p>
+                                <p><a href="mailto:alonso@agop.dev" target="_blank" rel="noreferrer" className="contact-mail">alonso@agop.dev</a></p>
                             </div>
                             <div className="col-md-4 section">
                             </div>
