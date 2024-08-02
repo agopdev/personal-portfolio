@@ -4,42 +4,45 @@ import '../assets/styles/AppNavbar.css';
 import { List } from 'react-bootstrap-icons';
 
 export default function AppNavbar() {
-  const [isResponsive, setIsResponsive] = useState(false);
+	const [isResponsive, setIsResponsive] = useState(false);
 
-  const handleClick = () => {
-    setIsResponsive(!isResponsive);
-  };
+	const handleClick = () => {
+		setIsResponsive(!isResponsive);
+	};
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const nav = document.querySelector('.topnav') as HTMLElement | null;
-      if (nav) {
-        nav.classList.toggle('scrolled', window.scrollY > nav.offsetHeight);
-      }
-    };
+	useEffect(() => {
+		const handleScroll = () => {
+			const nav = document.querySelector('.topnav') as HTMLElement | null;
+			if (nav) {
+				nav.classList.toggle(
+					'scrolled',
+					window.scrollY > nav.offsetHeight,
+				);
+			}
+		};
 
-    window.addEventListener('scroll', handleScroll);
+		window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
 
-  const navClass = isResponsive ? 'topnav responsive' : 'topnav';
+	const navClass = isResponsive ? 'topnav responsive' : 'topnav';
 
-  return (
-    <>
-      <nav className={navClass}>
-        <a href="/">Inicio</a>
-        <a href="#portfolio">Portafolio</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#knowledge">Conocimientos</a>
-        <a href="#contact">Contacto</a>
-        <a href="#nav" className="icon" onClick={handleClick}>
-          <List width="24" height="24" />
-        </a>
-      </nav>
-      <Outlet />
-    </>
-  );
+	return (
+		<>
+			<nav className={navClass}>
+				<a href="/">Home</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#skills">Skills</a>
+				<a href="#knowledge">Knowledge</a>
+				<a href="#contact">Contact</a>
+				<a href="#nav" className="icon" onClick={handleClick}>
+					<List width="24" height="24" />
+				</a>
+			</nav>
+			<Outlet />
+		</>
+	);
 }

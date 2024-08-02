@@ -6,28 +6,27 @@ import Index from './routes/Index';
 import Error from './routes/Error';
 
 const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <AppNavbar />,
-    children: [
-      {
-        path: '/',
-        index: true,
-        element: <Index/>
-      }
-    ],
+	{
+		path: '/',
+		element: <AppNavbar />,
+		children: [
+			{
+				path: '/',
+				index: true,
+				element: <Index />,
+			},
+		],
 
-    errorElement: <Error />,
-  }
+		errorElement: <Error />,
+	},
 ]);
 
-
 function App() {
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+	return (
+		<>
+			<RouterProvider router={router} />
+		</>
+	);
 }
 
 export default App;

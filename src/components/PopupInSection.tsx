@@ -3,20 +3,20 @@ import useIntersectionObserver from '../hooks/useIntersectionObserver';
 import '../assets/styles/PopupInSection.css';
 
 interface PopupInSectionProps {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }
 
 const PopupInSection: React.FC<PopupInSectionProps> = ({ children }) => {
-  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 });
+	const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.1 });
 
-  return (
-    <div
-      ref={ref}
-      className={`popup-in-section ${isIntersecting ? 'visible' : ''}`}
-    >
-      {children}
-    </div>
-  );
+	return (
+		<div
+			ref={ref}
+			className={`popup-in-section ${isIntersecting ? 'visible' : ''}`}
+		>
+			{children}
+		</div>
+	);
 };
 
 export default PopupInSection;

@@ -1,29 +1,29 @@
-import '../assets/styles/Footer.css';
+import PopupInSection from './PopupInSection';
+import profilePic from '../assets/images/profile-pic.jpeg';
 
-export default function Footer() {
+export default function Header() {
 	return (
 		<>
-			<div className="space-50"></div>
-			<footer id="contact">
-				<div className="contact">
-					<div className="container">
-						<div className="row">
-							<div className="col-md-4 section">
-								<h4 className="title">Contact</h4>
-								<p>
-									<a
-										href="mailto:alonso@agop.dev"
-										target="_blank"
-										rel="noreferrer"
-										className="contact-mail"
-									>
-										alonso@agop.dev
-									</a>
+			<header>
+				<div className="space-100"></div>
+				<div className="container py-3">
+					<div className="row">
+						<div className="col-md-6">
+							<h1 className="display-2 name">
+								<span className="type">
+									Alonso González-Leal
+								</span>
+							</h1>
+							<div className="space-20"></div>
+							<div className="border-description">
+								<p className="lead-2 description">
+									Software engineering student with a special
+									interest in backend development. Passionate
+									about solving problems and creating
+									efficient technical solutions. Always
+									looking to learn and improve in the field of
+									software development.
 								</p>
-							</div>
-							<div className="col-md-4 section"></div>
-							<div className="col-md-4 section">
-								<h4 className="title">Social</h4>
 								<a
 									href="https://github.com/agopdev"
 									target="_blank"
@@ -34,7 +34,7 @@ export default function Footer() {
 										xmlns="http://www.w3.org/2000/svg"
 										width="24px"
 										height="24px"
-										fill="currentColor"
+										fill="white"
 										className="bi bi-github"
 										viewBox="0 0 16 16"
 										style={{ margin: '15px' }}
@@ -52,7 +52,7 @@ export default function Footer() {
 										xmlns="http://www.w3.org/2000/svg"
 										width="24px"
 										height="24px"
-										fill="currentColor"
+										fill="white"
 										className="bi bi-linkedin"
 										viewBox="0 0 16 16"
 										style={{ margin: '15px' }}
@@ -62,29 +62,20 @@ export default function Footer() {
 								</a>
 							</div>
 						</div>
+						<div className="col-md-2"></div>
+						<div className="col-md-4 float-md-right mx-auto">
+							<PopupInSection>
+								<img
+									src={profilePic}
+									className="img-fluid rounded-circle profile-pic d-block mx-auto"
+									alt="Profile picture"
+								/>
+							</PopupInSection>
+						</div>
 					</div>
-					<div className="space-50"></div>
 				</div>
-				<div className="made-by">
-					<p>
-						Made with
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							fill="currentColor"
-							className="bi bi-heart-fill"
-							viewBox="0 0 16 16"
-						>
-							<path
-								fillRule="evenodd"
-								d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-							/>
-						</svg>
-						by Alonso.
-					</p>
-				</div>
-			</footer>
+				<div className="space-100"></div>
+			</header>
 		</>
 	);
 }
