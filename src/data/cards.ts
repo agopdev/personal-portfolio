@@ -1,5 +1,5 @@
 import { CardProps } from '../components/Card';
-import xfwallPic from '../assets/images/project-xfwall.png';
+import wallflowPic from '../assets/images/project-wallflow.png';
 import simpliPic from '../assets/images/project-github-simpli.png';
 import networkInterfacesInfoPic from '../assets/images/project-gnome-extension-network-interfaces-info.png';
 import myApiPic from '../assets/images/project-myapi.png';
@@ -8,12 +8,12 @@ import pandanotPic from '../assets/images/project-pandanot.png';
 
 const cards: CardProps[] = [
 	{
-		imageUrl: xfwallPic,
-		title: 'XFWall',
+		imageUrl: wallflowPic,
+		title: 'Wallflow',
 		description:
-			'XFWall is a bash script that allows XFCE users to change their wallpaper at regular intervals using the Wallhaven API. You can customize the search preferences.',
+			'Wallflow is a bash script that allows Linux users to change their wallpaper at regular intervals using the Wallhaven API. You can customize the search preferences.',
 		buttonText: 'Visit GitHub',
-		buttonLink: 'https://github.com/agopdev/xfwall',
+		buttonLink: 'https://github.com/agopdev/wallflow',
 	},
 	{
 		imageUrl: simpliPic,
